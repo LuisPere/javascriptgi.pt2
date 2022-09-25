@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var tomMass = 8;
+      var tomHeight = 9;
+      var jerryMass = 45;
+      var jerryHeight = 10;
+
+      tomMass = prompt("What is Toms Mass?");
+      tomHeight = prompt("What is Toms Height?");
+      jerryMass = prompt("What is Jerrys Mass?");
+      jerryHeight = prompt("What is Jerrys Height?");
+
+      tomBMI = tomMass / (tomHeight * tomHeight);
+      jerryBMI = jerryMass / (jerryHeight * jerryHeight);
+
+      var tomBiggerBMI = tomBMI > jerryBMI;
+
+      console.log(tomBMI, jerryBMI);
+
+      if (tomBMI > jerryBMI) {
+        console.log("Toms BMI is bigger than Jerrys");
+      } else {
+        console.log("Jerrys BMI is bigger than Toms");
+      }
+    </script>
+  </body>
+</html>
